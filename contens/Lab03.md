@@ -6,16 +6,16 @@ Como uno de los desarrolladores de Contoso, sabe que configurar su entorno de de
 
 Decide preparar un entorno de desarrollo que el equipo pueda utilizar para trabajar en su solución de IoT. El entorno deberá respaldar su trabajo en Azure y en su PC local. Después de un poco de discusión, su equipo ha tomado las siguientes decisiones de alto nivel sobre el entorno de desarrollo:
 
-Sistema operativo: 
+**Sistema operativo**
 
 Se utilizará Windows 10 como sistema operativo. La mayor parte de su equipo usa Windows, por lo que fue una elección lógica. Le indica al equipo que los servicios de Azure son compatibles con otros sistemas operativos (como Mac OS y Linux) y que Microsoft proporciona documentación de respaldo para los miembros de su equipo que eligen una de estas alternativas.
 Herramientas de codificación generales: 
 
-Visual Studio Code y la CLI de Azure se utilizarán como herramientas de codificación principales. Ambas herramientas admiten extensiones para IoT que aprovechan los SDK de Azure IoT.
+**Visual Studio Code** y la **CLI de Azure** se utilizarán como herramientas de codificación principales. Ambas herramientas admiten extensiones para IoT que aprovechan los SDK de Azure IoT.
 
-Herramientas de IoT Edge: 
+**Herramientas de IoT Edge**
 
-Docker Desktop Community y Python se utilizarán para admitir el desarrollo de módulos personalizados de IoT Edge (junto con Visual Studio Code).
+**Docker Desktop Community** y **Python** se utilizarán para admitir el desarrollo de módulos personalizados de IoT Edge (junto con **Visual Studio Code**).
 
 Para respaldar estas decisiones, configurará el siguiente entorno:
 
@@ -48,7 +48,9 @@ El laboratorio incluye los siguientes ejercicios:
 - Instalar extensiones de herramientas de desarrollo
 - Configurar archivos de Course Lab y herramientas alternativas
 
-> Nota: Si las herramientas y productos ya estan descargados deberá simplemente descargar los ficheros del laboratorio, como se indica mas abajo.
+## Laboratorio con todas las herramientas
+
+> Nota: Si las herramientas y productos ya están instalados y configurados, deberá simplemente descargar los ficheros del laboratorio, como se indica mas abajo.
 
 ```powershell
 Import-Module -Name BitsTransfer
@@ -59,15 +61,11 @@ MD C:\Labfiles
 ```
 
 ```powershell
-([System.Net.WebClient]::new()).DownloadFile('https://github.com/BillyClassTime/IoTonAWeek/raw/master/master.zip', 'D:\Az-220\master.zip')
+([System.Net.WebClient]::new()).DownloadFile('https://github.com/BillyClassTime/IoTonAWeek/raw/master/master.zip', 'D:\Labfiles\master.zip')
 ```
 
 ```powershell
-Expand-Archive -Path 'D:\Az-220\master.zip' -DestinationPath 'D:\Az-220'
-```
-
-```powershell
-Move-item -Path "C:\LabFiles\AZ-220-Microsoft-Azure-IoT-Developer-master\AllFiles\*" -Destination "C:\LabFiles" -confirm:$false
+Expand-Archive -Path 'D:\Labfiles\master.zip' -DestinationPath 'D:\Labfiles'
 ```
 
 [back](../Readme.md)
