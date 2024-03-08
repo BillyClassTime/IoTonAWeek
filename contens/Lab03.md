@@ -48,4 +48,26 @@ El laboratorio incluye los siguientes ejercicios:
 - Instalar extensiones de herramientas de desarrollo
 - Configurar archivos de Course Lab y herramientas alternativas
 
+Nota: Si las herramientas y productos ya estan descargados deberá simplemente descargar los ficheros del laboratorio, como se indica mas abajo.
+
+```powershell
+Import-Module -Name BitsTransfer
+```
+
+```powershell
+MD C:\Labfiles
+```
+
+```powershell
+([System.Net.WebClient]::new()).DownloadFile('https://github.com/BillyClassTime/IoTonAWeek/raw/master/master.zip', 'D:\Az-220\master.zip')
+```
+
+```powershell
+Expand-Archive -Path 'D:\Az-220\master.zip' -DestinationPath 'D:\Az-220'
+```
+
+```powershell
+Move-item -Path "C:\LabFiles\AZ-220-Microsoft-Azure-IoT-Developer-master\AllFiles\*" -Destination "C:\LabFiles" -confirm:$false
+```
+
 [back](../Readme.md)
