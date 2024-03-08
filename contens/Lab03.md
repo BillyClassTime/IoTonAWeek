@@ -48,7 +48,7 @@ El laboratorio incluye los siguientes ejercicios:
 - Instalar extensiones de herramientas de desarrollo
 - Configurar archivos de Course Lab y herramientas alternativas
 
-Nota: Si las herramientas y productos ya estan descargados deberá simplemente descargar los ficheros del laboratorio, como se indica mas abajo.
+> Nota: Si las herramientas y productos ya estan descargados deberá simplemente descargar los ficheros del laboratorio, como se indica mas abajo.
 
 ```powershell
 Import-Module -Name BitsTransfer
