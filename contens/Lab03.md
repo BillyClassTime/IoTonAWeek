@@ -61,11 +61,11 @@ MD C:\Labfiles
 ```
 
 ```powershell
-([System.Net.WebClient]::new()).DownloadFile('https://github.com/BillyClassTime/IoTonAWeek/raw/master/master.zip', 'D:\Labfiles\master.zip')
+([System.Net.WebClient]::new()).DownloadFile('https://github.com/BillyClassTime/IoTonAWeek/raw/master/master.zip', 'C:\Labfiles\master.zip')
 ```
 
 ```powershell
-Expand-Archive -Path 'D:\Labfiles\master.zip' -DestinationPath 'D:\Labfiles'
+Expand-Archive -Path 'C:\Labfiles\master.zip' -DestinationPath 'C:\Labfiles'
 ```
 
 [back](../Readme.md)
