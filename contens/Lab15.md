@@ -1,7 +1,9 @@
 # Remotely monitor and control devices with Azure IoT Hub
 
 Supervisar y controlar dispositivos de forma remota con Azure IoT Hub
+
 **Escenario de laboratorio**
+
 Contoso se enorgullece de sus quesos galardonados y tiene cuidado de mantener la temperatura y la humedad perfectas durante todo el proceso de fabricación, pero las condiciones durante el proceso de envejecimiento siempre han recibido una atención especial.
 
 En los últimos años, Contoso ha utilizado sensores ambientales para registrar las condiciones dentro de sus cuevas de queso natural donde ocurre el envejecimiento, y ha utilizado esos datos para identificar un entorno casi perfecto. Los datos de los lugares más exitosos (también conocidos como productores de premios) indican que la temperatura ideal para añejar el queso es de aproximadamente 50 grados Fahrenheit +/- 5 grados (10 grados Celsius +/- 2,8 grados). El valor de humedad ideal, medido en porcentaje de saturación máxima, es aproximadamente 85% +/- 10%.
@@ -17,6 +19,7 @@ Contoso le ha asignado la tarea de implementar un sistema automatizado que mante
 En este laboratorio, creará un prototipo de un sistema de monitoreo de cueva de queso que implementa dispositivos de IoT. Cada dispositivo está equipado con sensores de temperatura y humedad, y está conectado al sistema de procesamiento de aire que controla la temperatura y la humedad de la zona donde se encuentra el dispositivo.
 
 **Condiciones de laboratorio simplificadas**
+
 La frecuencia de la salida de telemetría es una consideración importante en las soluciones de producción. Es posible que un sensor de temperatura en una unidad de refrigeración solo necesite informar una vez por minuto, mientras que un sensor de aceleración en una aeronave puede tener que informar diez veces por segundo. En algunos casos, la frecuencia a la que se debe enviar la telemetría depende de las condiciones actuales. Por ejemplo, si la temperatura en nuestro escenario de la cueva del queso tiende a bajar rápidamente por la noche, puede beneficiarse de tener lecturas de sensor más frecuentes a partir de dos horas antes del atardecer. Por supuesto, el requisito de cambiar la frecuencia de la telemetría no necesita ser parte de un patrón predecible, los eventos que impulsan nuestra necesidad de cambiar la configuración del dispositivo de IoT pueden ser impredecibles.
 
 Para simplificar las cosas en este laboratorio, haremos las siguientes suposiciones:
@@ -72,30 +75,29 @@ En este laboratorio, completará las siguientes actividades:
 - eventHubsCompatibleEndpoint (En el IoT Hub es en Hub settings->Built-in Endpoing hasta antes del punto y coma de SharedAccessKey)
 
 ```
-sb://iothub-ns-iot-az220-17561499-2b42dd39ae.servicebus.windows.net
+sb://<iot-hub-name>.servicebus.windows.net
 ```
 
-- eventHubsCompatiblePath (Es el nombre del IoTHub
-- )
+- eventHubsCompatiblePath (Es el nombre del IoTHub)
 
 ```
-iot-az220-training-bv11
+
 ```
 
 - iotHubSasKey (IoTHub ->Shared access policies->service->PrimaryKey)
 
 ```
-69A6e3LwAxHewk3JE3mEdo2EvXTojQJ0XKtaFeSKHt8=
+
 ```
 
 - serviceConnectionString (IoTHub ->Shared access policies->iothubowner->PrimaryKey)
 
 ```
-HostName=iot-az220-training-bv11.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=SGON/tMmsuDmtMdLBbNwsMKceW1XoG063q7Z41MbXc4=
+
 ```
 
 ```
-HostName=iot-az220-training-bv11.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=SGON/tMmsuDmtMdLBbNwsMKceW1XoG063q7Z41MbXc4=
+
 ```
 
 

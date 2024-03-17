@@ -47,7 +47,7 @@ OPC
 ##### [Lab 14: Run an IoT Edge device in restricted network and offline](contens/Lab14.md)
 ##### [Lab 15: Remotely monitor and control devices with Azure IoT Hub](contens/Lab15.md)
 ##### [Lab 16: Automate IoT Device Management with Azure IoT Hub](contens/Lab16.md)
-##### [Lab 17: How to manage your Azure IoT Hub](contens/Lb17.md)
+##### [Lab 17: How to manage your Azure IoT Hub](contens/Lab17.md)
 ##### [Lab 18: Detect if your IoT Device was Tampered with Azure Defender for IoT](contens/Lab18.md)
 ##### [Lab 19: Develop Azure Digital Twins (ADT) solutions](contens/Lab19.md)
 ##### [Lab 20: Build with IoT Central](contens/Lab20.md)

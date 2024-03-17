@@ -52,7 +52,7 @@ Docker Community Edition instalado en la máquina de desarrollo, con Docker Clie
 Python power shell execution
 
 ```
-py file.py
+
 ```
 
 Exercise 2.4
@@ -60,35 +60,35 @@ Exercise 2.4
 pip installing iotedgehubdev
 
 ```
- C:\Users\billy\AppData\Local\Programs\Python\Python39\Scripts\pip install iotedgehubdev --user
+ 
 ```
 
 Azure Container register (Login server)
 
 ```
-acraz220trainingbmvb220210.azurecr.io
+
 ```
 
 ACR (Username and password)
 
 ```
-acraz220trainingbmvb220210
+
 ```
 
 ```
-1gh12snJoS0XO2gB6QWHxnBboUO/nG16
+
 ```
 
 Connec to ACR from command powershell line
 
 ```
-az acr login
+
 ```
 
 Connection string of polyName IoThubOwner
 
 ```
-HostName=iot-az220-training-bmvb220210.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=thjJLtLDx00cP+l98YdV/u/pmOCFBaCUfHCvEB3dNhE=
+
 ```
 
 Exercise 5 task 4
@@ -132,21 +132,4 @@ info: Send message successfullly
 info: [Print] hello world
 info: Time: 1644579211058 POST /api/v1/messages
 info: Send message successfullly
-info: [Print] hello world
-info: Time: 1644579226291 POST /api/v1/messages
-info: Send message successfullly
-info: [Print] hello world
-info: Time: 1644579229795 POST /api/v1/messages
-info: Send message successfullly
-info: [Print] hello world
-info: Time: 1644579232935 POST /api/v1/messages
-info: Send message successfullly
-info: [Print] hello world
-info: Time: 1644579236725 POST /api/v1/messages
-info: Send message successfullly
-info: [Print] hello world
-info: Time: 1644579302662 POST /api/v1/messages
-info: Send message successfullly
-info: [Print] hello world
-info: [Print] hello world
 info: [Print] hello world

@@ -47,35 +47,35 @@ Para comprender mejor cómo aprovechar mejor el ADT, se le ha pedido que cree un
 
 [back](../Readme.md)
 
-- connectionString
+connectionString
 
-  ```
-  
-  ```
+```
 
-  
+```
 
-- deviceConnectionString
 
-  ```
-  
-  ```
 
-  
+deviceConnectionString
 
-- devicePrimaryKey
+```
 
-  ```
-  
-  ```
+```
 
-  
 
-- storageAccountName
 
-  ```
-  
-  ```
+devicePrimaryKey
+
+```
+
+```
+
+
+
+storageAccountName
+
+```
+
+```
 
 Azure Digital Twin Host Name
 
@@ -119,11 +119,9 @@ Second Connection String primary key:
 
 ```
 
+***
 
-
-
-
-===
+**On Lab**
 
 - connectionString
 
@@ -189,8 +187,6 @@ Patch information cheese factory - interface model adt:
 az dt twin relationship create -n dt-az220-training-bm220215 --relationship-id factory_1_has_cave_1 --relationship rel_has_caves --twin-id factory_1 --target cave_1
 ```
 
-
-
 Principal ID associate to Azure Function
 
 ```
@@ -203,7 +199,7 @@ Event Hubs Instance Connection string primary key:
 Endpoint=sb://evhns-az220-training-bm1502.servicebus.windows.net/;SharedAccessKeyName=ADTHubPolicy;SharedAccessKey=RKIilOHfR5yqrmRrnFrabHQhPaKrWqwyLtEraoUqCcw=;EntityPath=evh-az220-adt2func
 ```
 
-Secon Connection String primary key:
+Secondary Connection String primary key:
 
 ```
 Endpoint=sb://evhns-az220-training-bm1502.servicebus.windows.net/;SharedAccessKeyName=TSIHubPolicy;SharedAccessKey=aRIXD67rhvlyK8M8F4f4f8r0p21Yc0YUe/IprAB92V8=;EntityPath=evh-az220-func2tsi

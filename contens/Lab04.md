@@ -1,7 +1,9 @@
 # Connect an IoT Device to Azure
 
 **Conecte un dispositivo de IoT a Azure**
+
 **Escenario de laboratorio**
+
 Contoso es conocido por producir quesos de alta calidad. Debido al rápido crecimiento de la empresa tanto en popularidad como en ventas, quieren tomar medidas para garantizar que sus quesos se mantengan en el mismo alto nivel de calidad que esperan sus clientes.
 
 En el pasado, los trabajadores de la fábrica recopilaban datos de temperatura y humedad durante cada turno de trabajo. A la compañía le preocupa que las expansiones de la fábrica requieran un mayor monitoreo a medida que las nuevas instalaciones entren en funcionamiento y que un proceso manual para recopilar datos no se amplíe.
@@ -25,41 +27,9 @@ En este laboratorio, comenzará por revisar los requisitos previos del laborator
 
 [back](../Readme.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IoT Device Connection string 
 
-```
-HostName=iot-az220-training-bmvb.azure-devices.net;DeviceId=sensor-th-0001;SharedAccessKey=04V6/qXKdwUWCHJWKfo7Z/qgBXPlWyWRjYAz5X0C5vM=
+```bash
+HostName=iot-az220-training-{yourid}.azure-devices.net;DeviceId=sensor-th-0001;SharedAccessKey={yourkey}
 ```
 
