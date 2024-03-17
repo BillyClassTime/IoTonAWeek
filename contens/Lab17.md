@@ -1,7 +1,9 @@
 # How to manage your Azure IoT Hub
 
 Cómo administrar su Azure IoT Hub
+
 **Escenario de laboratorio**
+
 La solución de seguimiento y supervisión de activos de Contoso funciona a la perfección. El sistema proporciona un seguimiento continuo durante todo el proceso de embalaje y envío. Ha implementado inscripciones grupales dentro de DPS para aprovisionar dispositivos a escala, y cuando el contenedor llega al destino, el dispositivo de IoT se "da de baja" a través de DPS para que pueda reutilizarse para envíos futuros.
 
 Para ayudar a administrar la utilización del dispositivo y otras características de la solución, el departamento de TI le ha pedido a su equipo que implemente los servicios de registro y monitorización de Azure dentro de la solución de IoT.
@@ -40,7 +42,7 @@ En este laboratorio, completará las siguientes actividades:
 - deviceConnectionString sensor-thl-2001
 
   ```
-  Key=fRMf97fL0N+jyyVj5Gkvbaz1b7RXGLsjDJERQ6paSI8=
+  
   ```
 
   
