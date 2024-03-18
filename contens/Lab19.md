@@ -86,7 +86,7 @@ Azure Digital Twin Host Name
 Content **adt-connection.txt** file
 
 ```
-
+adt-az220-training-bmvb2020a.api.weu.digitaltwins.azure.net
 ```
 
 Patch information cheese factory - interface model adt:
@@ -115,9 +115,7 @@ Event Hubs Instance Connection string primary key:
 
 Second Connection String primary key:
 
-```
 
-```
 
 ***
 
@@ -179,19 +177,35 @@ Patch information cheese factory - interface model adt:
 ]
 ```
 
-
-
  Adding relationships
 
 ```
 az dt twin relationship create -n dt-az220-training-bm220215 --relationship-id factory_1_has_cave_1 --relationship rel_has_caves --twin-id factory_1 --target cave_1
 ```
 
+Creating Azure Function
+
+```
+az functionapp create --resource-group Lab19 --consumption-plan-location WestEurope --name func-az220-hub2adt-training-bmvb2020a --storage-account sta220trainingbmvb2020a --functions-version 3
+```
+
+```
+az functionapp identity assign -g Lab19 -n func-az220-hub2adt-training-bmvb2020a --query principalId -o tsv
+```
+
 Principal ID associate to Azure Function
 
 ```
-7408acc3-e75b-4048-b076-d4bd77b6c437
+5611c25f-68de-4ec4-864b-d755de284f43
+
+az dt role-assignment create --dt-name adt-az220-training-bmvb2020a --assignee 5611c25f-68de-4ec4-864b-d755de284f43 --role "Azure Digital Twins Data Owner"
 ```
+
+```
+az functionapp config appsettings set -g Lab19 -n func-az220-hub2adt-training-bmvb2020a --settings "ADT_SERVICE_URL=https://dt-az220-training-bm220215.api.weu.digitaltwins.azure.net"
+```
+
+
 
 Event Hubs Instance Connection string primary key:
 
